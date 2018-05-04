@@ -1,0 +1,213 @@
+<ion-header>
+  <ion-navbar color= "colour1">
+    <ion-title>
+      Information Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-scroll scrollY="true"></ion-scroll>
+
+<ion-content padding>
+
+  <h2 text-center>The Twelve Olympians</h2>
+
+  <div Zeus>
+  <h3>Zeus</h3>
+  <ion-img src="https://i.pinimg.com/originals/35/e1/18/35e1181c6911ac75be8a3287ecb58df4.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show1()>Info</button>
+</p>
+  <p [hidden]="hidden1">King of the gods, ruler of Mount Olympus, and god of the sky, weather, thunder, lightning, law, order, and justice. 
+    He is the youngest son of Cronus and Rhea. He overthrew Cronus and gained the sovereignty of heaven for himself. 
+    In art he is depicted as a regal, mature man with a sturdy figure and dark beard. 
+    His usual attributes are the royal scepter and the lightning bolt. 
+    His sacred animals include the eagle and the bull. His Roman counterpart is Jupiter, also known as Jove.</p>
+ </div>
+
+ <div Poseidon>
+  <h3>Poseidon</h3>
+  <ion-img src="https://d1u5p3l4wpay3k.cloudfront.net/smite_gamepedia/4/49/T_Poseidon_Gold_Card.png?version=7247478f3c77488439d128d519c5c00c"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show2()>Info</button>
+</p>
+  <p [hidden]="hidden2">God of the sea, rivers, floods, droughts, and earthquakes. He is a son of Cronus and Rhea, and the brother of Zeus and Hades. 
+    He rules one of the three realms of the universe, as king of the sea and the waters. 
+    In art he is depicted as a mature man of sturdy build, often with a luxuriant beard, and holding a trident. 
+    His sacred animals include the horse and the dolphin. His wedding with Amphitrite is often presented as a triumphal procession. 
+    In some stories he rapes Medusa, leading to her transformation into a hideous Gorgon and also to the birth of their two children, Pegasus and Chrysaor. 
+    His Roman counterpart is Neptune.</p>
+ </div>
+
+   <div Ares>
+   <h3>Ares</h3>
+   <ion-img src="https://www.smitefire.com/images/god/card/ares.png"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show3()>Info</button>
+</p>
+   <p [hidden]="hidden3">God of war, bloodshed, and violence. 
+     The son of Zeus and Hera, he was depicted as a beardless youth, either nude with a helmet and spear or sword, or as an armed warrior. 
+     Homer portrays him as moody and unreliable, and as being the most unpopular god on earth and Olympus. 
+     He generally represents the chaos of war in contrast to Athena, a goddess of military strategy and skill. 
+     Ares is known for cuckolding his brother Hephaestus, conducting an affair with his wife Aphrodite. 
+     His sacred animals include vultures, venomous snakes, dogs, and boars. 
+     His Roman counterpart Mars by contrast was regarded as the dignified ancestor of the Roman people.</p> 
+   </div>
+
+   <div Athena>
+   <h3>Athena</h3>
+   <ion-img src="data:image/jpeg;base64,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"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show4()>Info</button>
+</p>
+   <p [hidden]="hidden4">Goddess of reason, wisdom, intelligence, skill, peace, warfare, battle strategy, and handicrafts. 
+     According to most traditions, she was born from Zeus's forehead, fully formed and armored. 
+     She is depicted as being crowned with a crested helm, armed with shield and spear, and wearing the aegis over a long dress. 
+     Poets describe her as "grey-eyed" or having especially bright, keen eyes. She is a special patron of heroes such as Odysseus. 
+     She is the patron of the city Athens (which was named after her) and is attributed to various inventions in arts and literature. 
+     Her symbol is the olive tree. She is commonly shown as being accompanied by her sacred animal, the owl. Her Roman counterpart is Minerva.</p> 
+   </div>
+
+   <div Hermes>
+   <h3>Hermes</h3>
+   <ion-img src="https://i.pinimg.com/originals/86/66/49/866649d4632e2a7f8ce7f50d79ee1ac9.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show5()>Info</button>
+</p>
+   <p [hidden]="hidden5">God of boundaries, travel, communication, trade, language, and writing. 
+     Hermes was also responsible for protecting livestock and presided over the spheres associated with fertility, music, luck, and deception. 
+     The son of Zeus and Maia, Hermes is the messenger of the gods, and a psychopomp who leads the souls of the dead into the afterlife. 
+     He was depicted either as a handsome and athletic beardless youth, or as an older bearded man. 
+     His attributes include the herald's wand or caduceus, winged sandals, and a traveler's cap. 
+     His sacred animals include the tortoise. His Roman counterpart is Mercury.</p> 
+   </div>
+
+   <div Hera>
+   <h3>Hera</h3>
+   <ion-img src="https://orig00.deviantart.net/0f7a/f/2015/220/b/8/hera_by_alanvadell-d94v10j.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show6()>Info</button>
+</p>
+   <p [hidden]="hidden6">Queen of the gods, and goddess of marriage, women, childbirth, heirs, kings, and empires. 
+     She is the wife and sister of Zeus, and the daughter of Cronus and Rhea. 
+     She was usually depicted as a regal woman in the prime of her life, wearing a diadem and veil and holding a lotus-tipped staff. 
+     Although she is the goddess of marriage, Zeus's many infidelities drive her to jealousy and vengefulness. 
+     Her sacred animals include the heifer, the peacock, and the cuckoo. Her Roman counterpart is Juno.</p> 
+   </div>
+
+   <div Hephaestus>
+   <h3>Hephaestus</h3>
+   <ion-img src="https://vignette.wikia.nocookie.net/dawn-of-gods/images/5/5b/Hephaestus_Summon.jpg/revision/latest?cb=20160622150715"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show7()>Info</button>
+</p>
+   <p [hidden]="hidden7">God of fire, metalworking, and crafts.
+     Either the son of Zeus and Hera or Hera alone, he is the smith of the gods and the husband of the adulterous Aphrodite. 
+     He was usually depicted as a bearded, crippled man with hammer, tongs, and anvil, and sometimes riding a donkey. 
+     His sacred animals include the donkey, the guard dog, and the crane. Among his creations was the armor of Achilles. 
+     Hephaestus used the fire of the forge as a creative force, but his Roman counterpart Vulcan was feared for his destructive potential and associated with the volcanic power of the earth</p> 
+   </div>
+
+   <div Artemis>
+   <h3>Artemis</h3>
+   <ion-img src="https://vignette.wikia.nocookie.net/smite/images/9/96/Artemis.jpg/revision/latest/scale-to-width-down/350?cb=20140703025110"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show8()>Info</button>
+</p>
+   <p [hidden]="hidden8">Virgin goddess of the hunt, wilderness, animals, young girls, childbirth, and plague. 
+     In later times, Artemis became associated with bows and arrows. She is the daughter of Zeus and Leto, and twin sister of Apollo. 
+     In art she is often depicted as a young woman dressed in a short knee-length chiton and equipped with a hunting bow and a quiver of arrows. 
+     Her attributes include hunting spears, animal pelts, deer and other wild animals. Her sacred animals include deer, bears, and wild boars. Her Roman counterpart is Diana.</p> 
+   </div>
+
+   <div Apollo>
+   <h3>Apollo</h3>
+   <ion-img src="https://i.pinimg.com/originals/e4/47/1d/e4471deafb5cd674a99e00d28b5c1701.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show9()>Info</button>
+</p>
+   <p [hidden]="hidden9">God of music, arts, knowledge, healing, plague, prophecy, poetry, manly beauty, and archery. 
+     He is the son of Zeus and Leto, and the twin brother of Artemis. Both Apollo and Artemis use a bow and arrow. 
+     Apollo is depicted as young, beardless, handsome and athletic. In myth, he can be cruel and destructive, and his love affairs are rarely happy. 
+     He is often accompanied by the Muses. His most famous temple is in Delphi, where he established his oracular shrine. 
+     His signs and symbols include the laurel wreath, bow and arrow, and lyre. His sacred animals include roe deer, swans, and pythons. 
+     Some late Roman and Greek poetry and mythography identifies him as a sun-god, equivalent to Roman Sol and Greek Helios.</p> 
+   </div>
+
+   <div Aphrodite>
+   <h3>Aphrodite</h3>
+   <ion-img src="https://hecatedemeter.files.wordpress.com/2017/03/c1dbbc4d823bc8bbb9f2329aa2935d77.jpg?w=500"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show10()>Info</button>
+</p>
+   <p [hidden]="hidden10">Goddess of beauty, love, desire, and pleasure. 
+     In Hesiod's Theogony, she was born from sea-foam and Uranus's severed genitals; in Homer's Illiad, she is daughter of Zeus and Dione. 
+     She was married to Hephaestus, but bore him no children. She had many lovers, most notably Ares, to whom she bore Harmonia, Phobos, and Deimos. 
+     She was also a lover to Adonis and Anchises, to whom she bore Aeneas. 
+     She is usually depicted as a naked or semi-nude beautiful woman. Her symbols include myrtle, roses, and the scallop shell. 
+     Her sacred animals include doves and sparrows. Her Roman counterpart is Venus.</p> 
+   </div>
+
+   <div Demeter>
+   <h3>Demeter</h3>
+   <ion-img src="http://poster.4teachers.org/imgFilePoster/515804.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show11()>Info</button>
+</p>
+   <p [hidden]="hidden11">Goddess of grain, agriculture, harvest, growth, and nourishment. 
+     Demeter, whose Roman counterpart is Ceres, is a daughter of Cronus and Rhea, and was swallowed and then regurgitated by her father. 
+     She is a sister of Zeus, by whom she bore Persephone, who is also known as Kore, i.e. "the girl." 
+     One of the central myths associated with Demeter involves Hades' abduction of Persephone and Demeter's lengthy search for her. 
+     Demeter is one of the main deities of the Eleusinian Mysteries, in which the rites seemed to center around Demeter's search for and reunion with her daughter, which symbolized both the rebirth of crops in spring and the rebirth of the initiates after death. 
+     She is depicted as a mature woman, often crowned and holding sheafs of wheat and a torch. 
+     Her symbols are the cornucopia, wheat-ears, the winged serpent, and the lotus staff. Her sacred animals include pigs and snakes.</p> 
+   </div>
+
+   <h6>Most listings include either one or the other of the following deities as one of the twelve Olympians</h6>
+
+    <div Dionysus>
+   <h3>Dionysus</h3>
+   <ion-img src="https://pre00.deviantart.net/15e2/th/pre/f/2011/066/6/0/god_dionysus_by_kostasishere-d3b4qwu.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show12()>Info</button>
+</p>
+   <p [hidden]="hidden12">God of wine, fruitfulness, parties, festivals, madness, chaos, drunkenness, vegetation, ecstasy, and the theater. 
+     He is the twice-born son of Zeus and Semele, in that Zeus snatched him from his mother's womb and stitched Dionysius into his own thigh and carried him until he was ready to be born. 
+     In art he is depicted as either an older bearded god (particularly before 430 BC) or an effeminate, long-haired youth (particularly after 430 BC).
+     His attributes include the thyrsus, a drinking cup, the grape vine, and a crown of ivy. 
+     He is often in the company of his thiasos, a group of attendants including satyrs, maenads, and his old tutor Silenus. 
+     The consort of Dionysus was Ariadne. It was once held that Dionysius was a later addition to the Greek pantheon, but the discovery of Linear B tablets confirm his status as a deity from an early period. 
+     Bacchus was another name for him in Greek, and came into common usage among the Romans.[7] His sacred animals include dolphins, serpents, tigers, and donkeys</p> 
+   </div>
+
+   <div Hestia>
+   <h3>Hestia</h3>
+   <ion-img src="http://grassicpas.info/wp-content/uploads/greek-god-hestia-44-best-hestia-images-on-pinterest-greek-gods-greek-mythology-728x1005.jpg"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show13()>Info</button>
+</p>
+   <p [hidden]="hidden13">Virgin goddess of the hearth, home, and chastity. 
+     She is a daughter of Rhea and Cronus, and a sister of Zeus. Not often identifiable in Greek art, she appeared as a modestly veiled woman. 
+     Her symbols are the hearth and kettle. In some accounts, she gave up her seat as one of the Twelve Olympians in favor of Dionysus, and she plays little role in Greek myths. 
+     Her Roman counterpart Vesta, however, was a major deity of the Roman state.</p> 
+   </div>
+
+   <h6>Hades having to look over the underworld does not stay on Olympus, but is still one of the three sons of Cronus</h6>
+
+   <div Hades>
+   <h3>Hades</h3>
+   <ion-img src="https://vignette.wikia.nocookie.net/dresdenfiles/images/a/ad/Hades_small_by_jasonengle-dattd4i.jpg/revision/latest?cb=20170730081532"></ion-img>
+  <p>
+    <button ion-button small color="colour2" (click)=show14()>Info</button>
+</p>
+   <p [hidden]="hidden14">King of the underworld and the dead. God of wealth. His consort is Persephone. 
+     His attributes are the drinking horn or cornucopia, key, sceptre, and the three-headed dog Cerberus. 
+     His sacred animals include the screech owl. 
+     He was one of three sons of Cronus and Rhea, and thus sovereign over one of the three realms of the universe, the underworld. 
+     As a chthonic god, however, his place among the Olympians is ambiguous. 
+     In the mystery religions and Athenian literature, Plouton ("the Rich one") was his preferred name, because of the idea that all riches came from the earth. 
+     The term Hades was used in this literature to refer to the underworld itself. 
+     The Romans translated Plouton as Dis Pater ("the Rich Father") or Pluto.</p> 
+   </div>
+
+</ion-content>

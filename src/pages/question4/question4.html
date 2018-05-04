@@ -1,0 +1,61 @@
+<!--
+  Generated template for the Question4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color= "colour1">
+    <ion-title>Question Four</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div Question4>
+  <p>
+    <ion-list radio-group [(ngModel)] ="quest4">
+     What is your Mythological Beast?<br>
+    <ion-item>
+        <ion-label>Centaur</ion-label>
+        <ion-radio value="centaur"></ion-radio>
+     </ion-item>
+    <ion-item>
+        <ion-label>Cyclops</ion-label>
+         <ion-radio value="cyclops"></ion-radio>
+     </ion-item>
+     <ion-item>
+        <ion-label>Griffin</ion-label>
+         <ion-radio value="griffin"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Harpy</ion-label>
+         <ion-radio value="harpy"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sphinx</ion-label>
+         <ion-radio value="sphinx"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Minotaur</ion-label>
+         <ion-radio value="minotaur"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pheonix</ion-label>
+         <ion-radio value="pheonix"></ion-radio>
+      </ion-item>
+       <ion-item>
+        <ion-label>Lycanthrope</ion-label>
+         <ion-radio value="lycanthrope"></ion-radio>
+      </ion-item>
+      </ion-list>
+  </p>
+ </div>
+
+ <p>
+    <button ion-button small color="colour2" (click)="openQuestion5()">Next</button>
+</p>
+
+</ion-content>

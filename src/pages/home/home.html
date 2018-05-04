@@ -1,17 +1,30 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color= "colour1">
+    <ion-title>Which Olymian are You?</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+
+  <div class="center">
+  <h2>Amongst The Mighty, Where Do You Lie?</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    Which of the many Greeks gods do you relate to the most.
+</p>
+    
+  <p>
+    Be it Hades, God of the UnderWorld.<br>
+    Poseidon, God of the Sea<br>
+    Zues, God of the Sky<br>
+    Or one of the many other famous Greek Gods.
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    To find out try the quiz below
   </p>
+
+<p>
+    <button ion-button round large color="colour1" (click)="openQuestion1()">Start Quiz</button>
+</p>
+</div>
+  
 </ion-content>

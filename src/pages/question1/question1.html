@@ -1,0 +1,45 @@
+<!--
+  Generated template for the Question1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color= "colour1">
+    <ion-title>Question One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div Question1>
+  <p>
+    <ion-list radio-group [(ngModel)] ="quest1">
+    Which season where you born in<br>
+    <ion-item>
+        <ion-label>Spring</ion-label>
+        <ion-radio value="spring"></ion-radio>
+     </ion-item>
+     <ion-item>
+        <ion-label>Summer</ion-label>
+         <ion-radio value="summer"></ion-radio>
+     </ion-item>
+     <ion-item>
+        <ion-label>Autumn</ion-label>
+         <ion-radio value="autumn"></ion-radio>
+     </ion-item>
+     <ion-item>
+        <ion-label>Winter</ion-label>
+         <ion-radio value="winter"></ion-radio>
+      </ion-item>
+      </ion-list>
+  </p>
+ </div>
+
+ <p>
+    <button ion-button small color="colour2" (click)="openQuestion2()">Next</button>
+</p>
+
+</ion-content>
